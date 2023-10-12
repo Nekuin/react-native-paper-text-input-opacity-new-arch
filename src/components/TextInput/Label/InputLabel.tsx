@@ -65,6 +65,7 @@ const InputLabel = (props: InputLabelProps) => {
     fontWeight,
     opacity: labeled.interpolate({
       inputRange: [0, 1],
+      // change last 0 to 1 or opacity to "fix" the problem
       outputRange: [hasActiveOutline ? 1 : 0, 0],
     }),
     transform: [
